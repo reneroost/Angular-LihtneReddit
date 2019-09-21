@@ -1,0 +1,30 @@
+<div class="four wide column center aligned votes">
+  <div class="ui statistic">
+    <div class="value">
+      {{ artikkel.haaled }}
+    </div>
+    <div class="label">
+      Punktid
+    </div>
+  </div>
+</div>
+<div class="twelve wide column">
+  <a class="ui large header" href="{{ artikkel.link }}">
+    {{ artikkel.pealkiri }}
+  </a>
+  <div class="meta">({{ artikkel.domeen() }})</div>
+  <ul class="ui big horizontal list voters">
+    <li class="item">
+      <a href (click)="ulesHaaletus()">
+        <i class="arrow up icon"></i>
+        üleshääletus
+      </a>
+    </li>
+    <li class="item">
+      <a href (click)="allaHaaletus()">
+        <i class="arrow down icon"></i>
+        allahääletus
+      </a>
+    </li>
+  </ul>
+</div>
